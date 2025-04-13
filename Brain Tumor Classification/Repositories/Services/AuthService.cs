@@ -28,10 +28,19 @@ public class AuthService : IAuthService
             Email = dto.Email,
             Name = dto.Name,
             Gender = dto.Gender,
-            BirthDate = dto.BirthDate
+            BirthDate = dto.BirthDate,
+         
         };
 
         var result = await _userManager.CreateAsync(user, dto.Password);
+
+        if (result.Succeeded)
+        {
+            foreach (var role in dto.Roles)
+            {
+                result = await _userManager.AddToRoleAsync(user, role);
+            }
+        }
 
         if (!result.Succeeded)
         {

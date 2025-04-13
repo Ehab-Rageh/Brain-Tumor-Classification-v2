@@ -487,7 +487,8 @@
           "email",
           "gender",
           "name",
-          "password"
+          "password",
+          "roles"
         ],
         "type": "object",
         "properties": {
@@ -511,6 +512,12 @@
           "birthDate": {
             "type": "string",
             "format": "date"
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         },
         "additionalProperties": false

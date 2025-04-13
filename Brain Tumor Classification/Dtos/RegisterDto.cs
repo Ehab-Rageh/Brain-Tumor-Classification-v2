@@ -20,4 +20,7 @@ public class RegisterDto
     [Required]
     [DataType(DataType.Date)]
     public DateTime BirthDate { get; set; }
+
+    [Required]
+    public string[] Roles { get; set; }
 }
