@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\wwwroot\\images\\5f4b1831-a98c-4819-b1e2-e734a77ccb4c.jpg",
+      "PackagePath": "staticwebassets\\images\\5f4b1831-a98c-4819-b1e2-e734a77ccb4c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\wwwroot\\images\\d840e1c2-8aaf-4f41-a3ec-aa90197d0565.jpg",
+      "PackagePath": "staticwebassets\\images\\d840e1c2-8aaf-4f41-a3ec-aa90197d0565.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Brain Tumor Classification.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Brain Tumor Classification.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Brain Tumor Classification.props",
+      "PackagePath": "build\\Brain Tumor Classification.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Brain Tumor Classification.props",
+      "PackagePath": "buildMultiTargeting\\Brain Tumor Classification.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Brain Tumor Classification.props",
+      "PackagePath": "buildTransitive\\Brain Tumor Classification.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,22 @@
+﻿global using Microsoft.EntityFrameworkCore;
+global using Brain_Tumor_Classification.Models;
+global using Brain_Tumor_Classification.Data;
+global using Microsoft.AspNetCore.Mvc;
+global using Brain_Tumor_Classification.Repositories.Interfaces;
+global using Brain_Tumor_Classification.Repositories.Services;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.IdentityModel.Tokens;
+global using System.Text;
+global using Brain_Tumor_Classification.Dtos;
+global using System.IdentityModel.Tokens.Jwt;
+global using System.Security.Claims;
+global using System.ComponentModel.DataAnnotations;
+global using AutoMapper;
+global using Brain_Tumor_Classification.Helper;
+global using Microsoft.Extensions.Options;
+global using Microsoft.AspNetCore.Http;
+global using Brain_Tumor_Classification.Settings;
+global using Brain_Tumor_Classification.Attributes;
+global using System.ComponentModel.DataAnnotations.Schema;
+

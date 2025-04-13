@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|c:\\users\\ehabr\\onedrive\\desktop\\brain-tumor-classification-main\\brain-tumor-classification-main\\brain tumor classification\\repositories\\services\\medicalrecordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|solutionrelative:brain tumor classification\\repositories\\services\\medicalrecordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|c:\\users\\ehabr\\onedrive\\desktop\\brain-tumor-classification-main\\brain-tumor-classification-main\\brain tumor classification\\controllers\\medicalrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|solutionrelative:brain tumor classification\\controllers\\medicalrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|c:\\users\\ehabr\\onedrive\\desktop\\brain-tumor-classification-main\\brain-tumor-classification-main\\brain tumor classification\\repositories\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|solutionrelative:brain tumor classification\\repositories\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|c:\\users\\ehabr\\onedrive\\desktop\\brain-tumor-classification-main\\brain-tumor-classification-main\\brain tumor classification\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|solutionrelative:brain tumor classification\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|c:\\users\\ehabr\\onedrive\\desktop\\brain-tumor-classification-main\\brain-tumor-classification-main\\brain tumor classification\\models\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|solutionrelative:brain tumor classification\\models\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|c:\\users\\ehabr\\onedrive\\desktop\\brain-tumor-classification-main\\brain-tumor-classification-main\\brain tumor classification\\repositories\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|solutionrelative:brain tumor classification\\repositories\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|c:\\users\\ehabr\\onedrive\\desktop\\brain-tumor-classification-main\\brain-tumor-classification-main\\brain tumor classification\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE540C1-D16F-4208-BA3B-88E6526354C6}|Brain Tumor Classification\\Brain Tumor Classification.csproj|solutionrelative:brain tumor classification\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Global.cs",
+              "DocumentMoniker": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Global.cs",
+              "RelativeDocumentMoniker": "Brain Tumor Classification\\Global.cs",
+              "ToolTip": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Global.cs",
+              "RelativeToolTip": "Brain Tumor Classification\\Global.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T13:03:17.732Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Repositories\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Brain Tumor Classification\\Repositories\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Repositories\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "Brain Tumor Classification\\Repositories\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T21:46:45.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Repositories\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Brain Tumor Classification\\Repositories\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Repositories\\Services\\AuthService.cs",
+              "RelativeToolTip": "Brain Tumor Classification\\Repositories\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T19:18:40.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Brain Tumor Classification\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Brain Tumor Classification\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwI0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T19:17:02.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MedicalRecordsController.cs",
+              "DocumentMoniker": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Controllers\\MedicalRecordsController.cs",
+              "RelativeDocumentMoniker": "Brain Tumor Classification\\Controllers\\MedicalRecordsController.cs",
+              "ToolTip": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Controllers\\MedicalRecordsController.cs",
+              "RelativeToolTip": "Brain Tumor Classification\\Controllers\\MedicalRecordsController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T17:29:33.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MedicalRecordService.cs",
+              "DocumentMoniker": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Repositories\\Services\\MedicalRecordService.cs",
+              "RelativeDocumentMoniker": "Brain Tumor Classification\\Repositories\\Services\\MedicalRecordService.cs",
+              "ToolTip": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Repositories\\Services\\MedicalRecordService.cs",
+              "RelativeToolTip": "Brain Tumor Classification\\Repositories\\Services\\MedicalRecordService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T13:07:55.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MedicalRecord.cs",
+              "DocumentMoniker": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Models\\MedicalRecord.cs",
+              "RelativeDocumentMoniker": "Brain Tumor Classification\\Models\\MedicalRecord.cs",
+              "ToolTip": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-main\\Brain Tumor Classification\\Models\\MedicalRecord.cs",
+              "RelativeToolTip": "Brain Tumor Classification\\Models\\MedicalRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T13:09:40.866Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

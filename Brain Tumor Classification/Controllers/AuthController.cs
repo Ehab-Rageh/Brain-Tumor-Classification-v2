@@ -1,0 +1,149 @@
+﻿using Humanizer;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Model;
+
+namespace Brain_Tumor_Classification.Controllers;
+
+[ApiController]
+[Route("api/auth")]
+public class AuthController : ControllerBase
+{
+    private readonly IAuthService _authService;
+
+    public AuthController(IAuthService authService)
+    {
+        _authService = authService;
+    }
+
+    [HttpPost("register")]
+    public async Task<IActionResult> RegisterAsync([FromBody] RegisterDto dto)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var result = await _authService.RegisterAsync(dto);
+
+        if (!result.IsNullOrEmpty())
+            return BadRequest(result);
+
+
+        return Ok("User registered successfully!\n" +
+                  "Check your Email to validation!");
+    }
+
+    [HttpPost("login")]
+    public async Task<IActionResult> Loginasync([FromBody] LoginDto dto)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var result = await _authService.LoginAsync(dto);
+
+        if (!result.IsAuthenticated)
+            return BadRequest(result.Message);
+
+        if (!string.IsNullOrEmpty(result.RefreshToken))
+            SetRefreshTokenInCookie(result.RefreshToken, result.RefreshTokenExpiration);
+
+        return Ok(new
+        {
+            Token = result.Token,
+            RefreshToken = result.RefreshToken
+        });
+    }
+
+    [HttpPost("confirmEmail")]
+    public async Task<IActionResult> ConfirmEmailAsync([FromBody] ConfirmEmailRequestDto confirmEmailRequestDto)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        if (await _authService.ConfirmEmailAsync(confirmEmailRequestDto) is null)
+            return Ok("Email confirmed successfully.");
+
+        return BadRequest(await _authService.ConfirmEmailAsync(confirmEmailRequestDto));
+    }
+
+    [Route("forgetPassword")]
+    [HttpPost]
+    public async Task<IActionResult> ForgetPasswordAsync(ForgetPasswordDto request)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        if (await _authService.ForgetPasswordAsync(request) is not null)
+            return BadRequest(await _authService.ForgetPasswordAsync(request));
+
+        return Ok(new { message = "Reset password code has been sent to your email" });
+    }
+
+    [HttpPost("resetPassword")]
+    public async Task<IActionResult> ResetPasswordAsync([FromBody] ResetPasswordDto model)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        if (await _authService.ResetPasswordAsync(model) is not null)
+            return BadRequest(await _authService.ResetPasswordAsync(model));
+
+        return Ok("Password has been reset successfully.");
+    }
+
+    [HttpPost("addRole")]
+    public async Task<IActionResult> AddRoleasync([FromBody] AddRoleDto dto)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var result = await _authService.AddRoleAsync(dto);
+
+        if (!string.IsNullOrEmpty(result))
+            return BadRequest(result);
+
+        return Ok(dto);
+    }
+
+    [HttpPost("refreshToken")]
+    public async Task<IActionResult> RefreshTokenAsync()
+    {
+        var refreshToken = Request.Cookies["refreshToken"];
+
+        var result = await _authService.RefreshTokenAsync(refreshToken);
+
+        if (!result.IsAuthenticated)
+            return BadRequest(result.Message);
+
+        SetRefreshTokenInCookie(result.RefreshToken, result.RefreshTokenExpiration);
+
+        return Ok(result);
+    }
+
+    [HttpPost("revokeToken")]
+    public async Task<IActionResult> RevokeTokenAsync([FromBody] RevokeTokenDto dto)
+    {
+        var token = dto.Token ?? Request.Cookies["refreshToken"];
+
+        if (token is null)
+            return BadRequest("Token is required!");
+
+        var result = await _authService.RevokeTokenAsync(token);
+
+        if (!result)
+            return BadRequest("Token is invalid!");
+
+        return Ok("Token has been revoked successfully!");
+    }
+
+    private void SetRefreshTokenInCookie(string refreshToken, DateTime Expires)
+    {
+        var cookieOptions = new CookieOptions
+        {
+            HttpOnly = true,
+            Expires = Expires.ToLocalTime(),
+            Secure = true,
+            IsEssential = true,
+            SameSite = SameSiteMode.None,
+        };
+        Response.Cookies.Append("refreshToken", refreshToken, cookieOptions);
+    }
+}
