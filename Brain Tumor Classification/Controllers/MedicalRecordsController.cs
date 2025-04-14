@@ -1,7 +1,10 @@
-﻿namespace Brain_Tumor_Classification.Controllers
+﻿using Microsoft.AspNetCore.Authorization;
+
+namespace Brain_Tumor_Classification.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class MedicalRecordsController : ControllerBase
     {
         private readonly IMedicalRecordService _medicalRecordService;

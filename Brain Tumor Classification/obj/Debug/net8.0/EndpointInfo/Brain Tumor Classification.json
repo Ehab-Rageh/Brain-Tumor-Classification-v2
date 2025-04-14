@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Brain Tumor Classification",
-    "version": "1.0"
+    "title": "Brain Tumor Classification API",
+    "version": "v1"
   },
   "paths": {
     "/api/auth/register": {
@@ -572,6 +572,18 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

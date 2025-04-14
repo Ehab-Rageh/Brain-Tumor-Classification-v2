@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TAYFZBvpeZtt4OVemhSdRc6wk5OVElQ0SaSY26MdMyY=",
+  "Hash": "W72wNd+Mx2FDRZdS2Z4uWGGjl5pHoWiobUgBt4upUIs=",
   "Source": "Brain Tumor Classification",
   "BasePath": "_content/Brain Tumor Classification",
   "Mode": "Default",
@@ -59,6 +59,27 @@
       "OriginalItemSpec": "wwwroot\\images\\5f4b1831-a98c-4819-b1e2-e734a77ccb4c.jpg"
     },
     {
+      "Identity": "C:\\Users\\hossa\\OneDrive\\Desktop\\bla bla\\sasdsa\\Brain Tumor Classification\\wwwroot\\images\\ca430ddd-36d2-4d09-adcb-809e9b7e2f01.jpg",
+      "SourceId": "Brain Tumor Classification",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hossa\\OneDrive\\Desktop\\bla bla\\sasdsa\\Brain Tumor Classification\\wwwroot\\",
+      "BasePath": "_content/Brain Tumor Classification",
+      "RelativePath": "images/ca430ddd-36d2-4d09-adcb-809e9b7e2f01#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "varays0sx7",
+      "Integrity": "t/q0ED7ZCk9gJWnCadNPJHTDt5LMkykJeQw1FBlW/gY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ca430ddd-36d2-4d09-adcb-809e9b7e2f01.jpg"
+    },
+    {
       "Identity": "C:\\Users\\hossa\\OneDrive\\Desktop\\bla bla\\sasdsa\\Brain Tumor Classification\\wwwroot\\images\\d840e1c2-8aaf-4f41-a3ec-aa90197d0565.jpg",
       "SourceId": "Brain Tumor Classification",
       "SourceType": "Discovered",
@@ -78,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\d840e1c2-8aaf-4f41-a3ec-aa90197d0565.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hossa\\OneDrive\\Desktop\\bla bla\\sasdsa\\Brain Tumor Classification\\wwwroot\\images\\e2424e17-4adc-4d71-896f-ba30386b2bb1.jpg",
+      "SourceId": "Brain Tumor Classification",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hossa\\OneDrive\\Desktop\\bla bla\\sasdsa\\Brain Tumor Classification\\wwwroot\\",
+      "BasePath": "_content/Brain Tumor Classification",
+      "RelativePath": "images/e2424e17-4adc-4d71-896f-ba30386b2bb1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4x3spalznw",
+      "Integrity": "KMz66GLsdt3LXL/BGN1dygYGPYPZP9s62+6EHwrIGCM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\e2424e17-4adc-4d71-896f-ba30386b2bb1.jpg"
     }
   ],
   "Endpoints": [
@@ -246,6 +288,88 @@
       ]
     },
     {
+      "Route": "images/ca430ddd-36d2-4d09-adcb-809e9b7e2f01.jpg",
+      "AssetFile": "C:\\Users\\hossa\\OneDrive\\Desktop\\bla bla\\sasdsa\\Brain Tumor Classification\\wwwroot\\images\\ca430ddd-36d2-4d09-adcb-809e9b7e2f01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t/q0ED7ZCk9gJWnCadNPJHTDt5LMkykJeQw1FBlW/gY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:31:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-t/q0ED7ZCk9gJWnCadNPJHTDt5LMkykJeQw1FBlW/gY="
+        }
+      ]
+    },
+    {
+      "Route": "images/ca430ddd-36d2-4d09-adcb-809e9b7e2f01.varays0sx7.jpg",
+      "AssetFile": "C:\\Users\\hossa\\OneDrive\\Desktop\\bla bla\\sasdsa\\Brain Tumor Classification\\wwwroot\\images\\ca430ddd-36d2-4d09-adcb-809e9b7e2f01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76927"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t/q0ED7ZCk9gJWnCadNPJHTDt5LMkykJeQw1FBlW/gY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:31:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "varays0sx7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ca430ddd-36d2-4d09-adcb-809e9b7e2f01.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-t/q0ED7ZCk9gJWnCadNPJHTDt5LMkykJeQw1FBlW/gY="
+        }
+      ]
+    },
+    {
       "Route": "images/d840e1c2-8aaf-4f41-a3ec-aa90197d0565.biv5iq9wg6.jpg",
       "AssetFile": "C:\\Users\\hossa\\OneDrive\\Desktop\\bla bla\\sasdsa\\Brain Tumor Classification\\wwwroot\\images\\d840e1c2-8aaf-4f41-a3ec-aa90197d0565.jpg",
       "Selectors": [],
@@ -324,6 +448,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-PUcyhMPZP1qSdilFOC5oLpX/jlXMSOxI040clXU146U="
+        }
+      ]
+    },
+    {
+      "Route": "images/e2424e17-4adc-4d71-896f-ba30386b2bb1.4x3spalznw.jpg",
+      "AssetFile": "C:\\Users\\hossa\\OneDrive\\Desktop\\bla bla\\sasdsa\\Brain Tumor Classification\\wwwroot\\images\\e2424e17-4adc-4d71-896f-ba30386b2bb1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59986"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KMz66GLsdt3LXL/BGN1dygYGPYPZP9s62+6EHwrIGCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:29:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4x3spalznw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/e2424e17-4adc-4d71-896f-ba30386b2bb1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KMz66GLsdt3LXL/BGN1dygYGPYPZP9s62+6EHwrIGCM="
+        }
+      ]
+    },
+    {
+      "Route": "images/e2424e17-4adc-4d71-896f-ba30386b2bb1.jpg",
+      "AssetFile": "C:\\Users\\hossa\\OneDrive\\Desktop\\bla bla\\sasdsa\\Brain Tumor Classification\\wwwroot\\images\\e2424e17-4adc-4d71-896f-ba30386b2bb1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59986"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KMz66GLsdt3LXL/BGN1dygYGPYPZP9s62+6EHwrIGCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 13 Apr 2025 20:29:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KMz66GLsdt3LXL/BGN1dygYGPYPZP9s62+6EHwrIGCM="
         }
       ]
     }
