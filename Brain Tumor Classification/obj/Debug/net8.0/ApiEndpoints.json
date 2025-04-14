@@ -140,32 +140,21 @@
   {
     "ContainingType": "Brain_Tumor_Classification.Controllers.MedicalRecordsController",
     "Method": "GetMedicalRecordsBypatientIdAsync",
-    "RelativePath": "api/MedicalRecords/getByPatientId/{id}",
+    "RelativePath": "api/MedicalRecords/GetCurrentUserMedicalRecords",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
     "ContainingType": "Brain_Tumor_Classification.Controllers.MedicalRecordsController",
     "Method": "AddMedicalRecordAsync",
-    "RelativePath": "api/MedicalRecords/upload/{id}",
+    "RelativePath": "api/MedicalRecords/upload",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      },
       {
         "Name": "MRIImage",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",

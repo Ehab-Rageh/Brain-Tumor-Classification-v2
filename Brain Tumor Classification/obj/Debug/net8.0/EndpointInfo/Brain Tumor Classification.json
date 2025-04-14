@@ -234,20 +234,10 @@
         }
       }
     },
-    "/api/MedicalRecords/upload/{id}": {
+    "/api/MedicalRecords/upload": {
       "post": {
         "tags": [
           "MedicalRecords"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -299,20 +289,10 @@
         }
       }
     },
-    "/api/MedicalRecords/getByPatientId/{id}": {
+    "/api/MedicalRecords/GetCurrentUserMedicalRecords": {
       "get": {
         "tags": [
           "MedicalRecords"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "responses": {
           "200": {

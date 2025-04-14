@@ -14,10 +14,15 @@ namespace Brain_Tumor_Classification.Controllers
             _medicalRecordService = medicalRecordService;
         }
 
-        [HttpPost("upload/{id}")]
-        public async Task<IActionResult> AddMedicalRecordAsync(string id, [FromForm] MedicalRecordDto dto)
+        [HttpPost("upload")]
+        public async Task<IActionResult> AddMedicalRecordAsync([FromForm] MedicalRecordDto dto)
         {
-            var response = await _medicalRecordService.AddMedicalRecordAsync(id, dto);
+            var userId = User.FindFirst("uid")?.Value;
+
+            if (userId == null)
+                return Unauthorized();
+
+            var response = await _medicalRecordService.AddMedicalRecordAsync(userId, dto);
 
             if (!string.IsNullOrEmpty(response))
                 return BadRequest(response);
@@ -36,10 +41,15 @@ namespace Brain_Tumor_Classification.Controllers
             return Ok(medicalRecord);
         }
 
-        [HttpGet("getByPatientId/{id}")]
-        public async Task<IActionResult> GetMedicalRecordsBypatientIdAsync(string id)
+        [HttpGet("GetCurrentUserMedicalRecords")]
+        public async Task<IActionResult> GetMedicalRecordsBypatientIdAsync()
         {
-            var medicalRecord = await _medicalRecordService.GetMedicalRecordsByPatientIdAsync(id);
+            var userId = User.FindFirst("uid")?.Value;
+
+            if (userId == null)
+                return Unauthorized();
+
+            var medicalRecord = await _medicalRecordService.GetMedicalRecordsByPatientIdAsync(userId);
 
             if (medicalRecord is null)
                 return NotFound("There is no Medical Records!");
