@@ -68,6 +68,11 @@ public class AuthService : IAuthService
 
         var user = await _userManager.FindByEmailAsync(dto.Email);
 
+        if (user.EmailConfirmed)
+        {
+            authDto.IsConfirmed = true;
+        }
+
         if (user is null || !await _userManager.CheckPasswordAsync(user, dto.Password))
             return new AuthDto { Message = "Email or password is incorrect!" };
 
@@ -107,8 +112,8 @@ public class AuthService : IAuthService
 
         var result = await _userManager.ConfirmEmailAsync(user, dto.Code);
 
-        if (result.Succeeded)
-            return string.Empty;
+        if (!result.Succeeded)
+            return "T";
 
         return "Invalid or expired confirmation code.";
     }

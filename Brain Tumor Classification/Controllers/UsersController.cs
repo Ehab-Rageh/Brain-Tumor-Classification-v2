@@ -37,12 +37,16 @@ namespace Brain_Tumor_Classification.Controllers
         }
 
         [Authorize]
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update([FromRoute] string id, [FromBody] UpdateUserDto dto)
+        [HttpPut]
+        public async Task<IActionResult> Update([FromBody] UpdateUserDto dto)
         {
-            var user = await _userService.GetByIdAsync(id);
+            var userId = User.FindFirst("uid")?.Value;
+
+            if(userId is null) return Unauthorized();
+
+            var user = await _userService.GetByIdAsync(userId);
             if (user is null)
-                return NotFound($"There is no user with Id: {id}");
+                return NotFound($"There is no user with Id: {userId}");
 
             user.Name = dto.Name;
             user.BirthDate = dto.BirthDate;

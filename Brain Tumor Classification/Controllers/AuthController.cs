@@ -1,4 +1,6 @@
 ﻿using Humanizer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Model;
 
@@ -9,10 +11,16 @@ namespace Brain_Tumor_Classification.Controllers;
 public class AuthController : ControllerBase
 {
     private readonly IAuthService _authService;
+    private readonly UserManager<ApplicationUser> userManager;
 
-    public AuthController(IAuthService authService)
+    public AuthController
+    (
+        IAuthService authService,
+        UserManager<ApplicationUser> userManager
+    )
     {
         _authService = authService;
+        this.userManager = userManager;
     }
 
     [HttpPost("register")]
@@ -42,6 +50,9 @@ public class AuthController : ControllerBase
         if (!result.IsAuthenticated)
             return BadRequest(result.Message);
 
+        if (!result.IsConfirmed)
+            return BadRequest("Please confirm your email first");
+
         if (!string.IsNullOrEmpty(result.RefreshToken))
             SetRefreshTokenInCookie(result.RefreshToken, result.RefreshTokenExpiration);
 
@@ -52,13 +63,41 @@ public class AuthController : ControllerBase
         });
     }
 
+    [HttpGet("Me")]
+    [Authorize]
+    public async Task<IActionResult> GetCurrentUser()
+    {
+        var userId = User.FindFirst("uid")?.Value;
+        
+        if (userId == null)
+            return Unauthorized();
+
+        var user = await userManager.FindByIdAsync(userId);
+        if (user == null)
+            return NotFound("User not found");
+
+        var roles = await userManager.GetRolesAsync(user);
+
+        var result = new GetCurrentUserResponseDto
+        {
+            Name = user.Name,
+            Email = user.Email,
+            Gender = user.Gender,
+            BirthDate = user.BirthDate,
+        };
+
+        return Ok(result);
+    }
+
     [HttpPost("confirmEmail")]
     public async Task<IActionResult> ConfirmEmailAsync([FromBody] ConfirmEmailRequestDto confirmEmailRequestDto)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        if (await _authService.ConfirmEmailAsync(confirmEmailRequestDto) is null)
+        var res = await _authService.ConfirmEmailAsync(confirmEmailRequestDto);
+
+        if (res == "T")
             return Ok("Email confirmed successfully.");
 
         return BadRequest(await _authService.ConfirmEmailAsync(confirmEmailRequestDto));

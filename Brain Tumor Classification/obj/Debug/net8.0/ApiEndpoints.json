@@ -65,6 +65,16 @@
   },
   {
     "ContainingType": "Brain_Tumor_Classification.Controllers.AuthController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "api/auth/Me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_Tumor_Classification.Controllers.AuthController",
     "Method": "RefreshTokenAsync",
     "RelativePath": "api/auth/refreshToken",
     "HttpMethod": "POST",
@@ -175,6 +185,22 @@
   },
   {
     "ContainingType": "Brain_Tumor_Classification.Controllers.UsersController",
+    "Method": "Update",
+    "RelativePath": "api/Users",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Brain_Tumor_Classification.Dtos.UpdateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Brain_Tumor_Classification.Controllers.UsersController",
     "Method": "GetById",
     "RelativePath": "api/Users/{id}",
     "HttpMethod": "GET",
@@ -184,27 +210,6 @@
       {
         "Name": "id",
         "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Brain_Tumor_Classification.Controllers.UsersController",
-    "Method": "Update",
-    "RelativePath": "api/Users/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Brain_Tumor_Classification.Dtos.UpdateUserDto",
         "IsRequired": true
       }
     ],

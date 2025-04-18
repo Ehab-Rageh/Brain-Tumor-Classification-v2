@@ -9,6 +9,7 @@ public class AuthDto
     public string Email { get; set; }
     public List<string> Roles { get; set; }
     public string Token { get; set; }
+    public bool IsConfirmed { get; set; } = false;
     //public DateTime ExpiresOn { get; set; }
 
     [JsonIgnore]
