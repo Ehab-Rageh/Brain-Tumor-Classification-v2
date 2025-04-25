@@ -19,4 +19,10 @@ global using Microsoft.AspNetCore.Http;
 global using Brain_Tumor_Classification.Settings;
 global using Brain_Tumor_Classification.Attributes;
 global using System.ComponentModel.DataAnnotations.Schema;
+global using System.Net.Http.Headers;
+global using Humanizer;
+global using Microsoft.AspNetCore.Authorization;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
+global using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Model;
 

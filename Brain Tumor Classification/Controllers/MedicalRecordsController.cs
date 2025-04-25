@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-
-namespace Brain_Tumor_Classification.Controllers
+﻿namespace Brain_Tumor_Classification.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -27,7 +25,7 @@ namespace Brain_Tumor_Classification.Controllers
             if (!string.IsNullOrEmpty(response))
                 return BadRequest(response);
 
-            return Ok();
+            return Ok(response);
         }
 
         [HttpGet("getById/{id}")]

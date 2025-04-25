@@ -1,4 +1,6 @@
-﻿namespace Brain_Tumor_Classification.Repositories.Services
+﻿
+
+namespace Brain_Tumor_Classification.Repositories.Services
 {
     public class MedicalRecordService : IMedicalRecordService
     {
@@ -20,8 +22,6 @@
             if (dto.MRIImage is null || dto.MRIImage.Length == 0)
                 return"No file uploaded!";
 
-            var imageName = await SaveImageAsync(dto.MRIImage);
-
             byte[] fileBytes;
             using (var memoryStream = new MemoryStream())
             {
@@ -29,8 +29,12 @@
                 fileBytes = memoryStream.ToArray();
             }
 
+            string aiResponse = "";
+
             //ToDo: Save the response from the AI model to the database
-            //var aiResponse = await SendToAiModelAsync(fileBytes);
+            aiResponse = await SendToAiModelAsync(fileBytes);
+
+            var imageName = await SaveImageAsync(dto.MRIImage);
 
             var medicalRecord = new MedicalRecord
             {
@@ -44,7 +48,7 @@
             await _context.SaveChangesAsync();
 
             //ToDo: Return the AI model response
-            return string.Empty;
+            return aiResponse;
         }
 
         public async Task<byte[]?> GetMedicalRecordByIdAsync(int id)
@@ -81,15 +85,21 @@
 
         private async Task<string> SendToAiModelAsync(byte[] fileBytes)
         {
-            using var content = new ByteArrayContent(fileBytes);
+            // 1. Create a stream content for the binary data
+            using var fileContent = new ByteArrayContent(fileBytes);
 
-            var formData = new MultipartFormDataContent
-            {
-                { content, "file", "mri_image.jpg" }
-            };
+            // 2. Set the content type (e.g., for JPEG)
+            fileContent.Headers.ContentType = MediaTypeHeaderValue.Parse("image/jpg");
 
-            //ToDo: Change the URL to the AI model endpoint
-            var response = await _httpClient.PostAsJsonAsync("https://localhost:5001/api/ai-model/predict", formData);
+            // 3. Prepare multipart form data
+            using var formData = new MultipartFormDataContent();
+            formData.Add(fileContent, "file", "mri_image.jpg");
+
+            // 4. Send with PostAsync (not PostAsJsonAsync!)
+            var response = await _httpClient.PostAsync(
+                "https://a06a-104-196-146-144.ngrok-free.app/predict",
+                formData
+            );
 
             response.EnsureSuccessStatusCode();
 

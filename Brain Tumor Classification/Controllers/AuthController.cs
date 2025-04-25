@@ -1,10 +1,4 @@
-﻿using Humanizer;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Model;
-
-namespace Brain_Tumor_Classification.Controllers;
+﻿namespace Brain_Tumor_Classification.Controllers;
 
 [ApiController]
 [Route("api/auth")]

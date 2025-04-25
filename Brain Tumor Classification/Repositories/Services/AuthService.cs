@@ -68,10 +68,13 @@ public class AuthService : IAuthService
 
         var user = await _userManager.FindByEmailAsync(dto.Email);
 
-        if (user.EmailConfirmed)
-        {
-            authDto.IsConfirmed = true;
-        }
+        //Todo
+        //if (user.EmailConfirmed)
+        //{
+        //    authDto.IsConfirmed = true;
+        //}
+
+        authDto.IsConfirmed = true;
 
         if (user is null || !await _userManager.CheckPasswordAsync(user, dto.Password))
             return new AuthDto { Message = "Email or password is incorrect!" };

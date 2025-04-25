@@ -1,5 +1,1 @@
-wwwroot\images\11bbb3a2-caa7-44de-a5de-3b4c416135b8.jpg
-wwwroot\images\5f4b1831-a98c-4819-b1e2-e734a77ccb4c.jpg
-wwwroot\images\ca430ddd-36d2-4d09-adcb-809e9b7e2f01.jpg
-wwwroot\images\d840e1c2-8aaf-4f41-a3ec-aa90197d0565.jpg
-wwwroot\images\e2424e17-4adc-4d71-896f-ba30386b2bb1.jpg
+wwwroot\images\46272640-abd7-4964-8e50-f3475afe5911.jpg

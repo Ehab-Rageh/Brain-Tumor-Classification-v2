@@ -1136,3 +1136,4 @@ C:\Users\hossa\OneDrive\Desktop\bla bla\sasdsa\Brain Tumor Classification\obj\De
 C:\Users\hossa\OneDrive\Desktop\bla bla\sasdsa\Brain Tumor Classification\obj\Debug\net8.0\Brain Tumor Classification.pdb
 C:\Users\hossa\OneDrive\Desktop\bla bla\sasdsa\Brain Tumor Classification\obj\Debug\net8.0\Brain Tumor Classification.genruntimeconfig.cache
 C:\Users\hossa\OneDrive\Desktop\bla bla\sasdsa\Brain Tumor Classification\obj\Debug\net8.0\ref\Brain Tumor Classification.dll
+C:\Users\ehabr\OneDrive\Desktop\Brain-Tumor-Classification-main\Brain-Tumor-Classification-main\Brain Tumor Classification\obj\Debug\net8.0\Brain Tumor Classification.sourcelink.json
