@@ -2,9 +2,11 @@
 
 public class UpdateUserDto
 {
+    [Required]
     public string Name { get; set; }
-    public string UserName { get; set; }
+    [Required]
     public string Gender { get; set; }
+    [Required]
     public DateTime BirthDate { get; set; }
 
 }

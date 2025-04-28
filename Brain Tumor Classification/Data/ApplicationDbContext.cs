@@ -9,6 +9,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<ApplicationUser> ApplicationUsers { get; set; }
     public DbSet<Tumor>Tumors { get; set; }
     public DbSet<MedicalRecord> MedicalRecords { get; set; }
+    public DbSet<PredictionResult> PredictionResults { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

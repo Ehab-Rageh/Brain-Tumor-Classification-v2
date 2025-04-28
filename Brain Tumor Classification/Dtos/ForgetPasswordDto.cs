@@ -2,6 +2,7 @@
 {
     public class ForgetPasswordDto
     {
+        [Required]
         public string Email { get; set; } = string.Empty;
     }
 }

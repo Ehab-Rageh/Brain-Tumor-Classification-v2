@@ -1,4 +1,4 @@
-﻿
+﻿using System.Text.Json;
 
 namespace Brain_Tumor_Classification.Repositories.Services
 {
@@ -7,20 +7,28 @@ namespace Brain_Tumor_Classification.Repositories.Services
         private readonly ApplicationDbContext _context;
         private readonly HttpClient _httpClient;
         private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IImageService imageService;
         private readonly string _imagePath;
 
-        public MedicalRecordService(ApplicationDbContext context, HttpClient httpClient, IWebHostEnvironment webHostEnvironment)
+        public MedicalRecordService
+        (
+            ApplicationDbContext context,
+            HttpClient httpClient,
+            IWebHostEnvironment webHostEnvironment,
+            IImageService imageService
+        )
         {
             _context = context;
             _httpClient = httpClient;
             _webHostEnvironment = webHostEnvironment;
+            this.imageService = imageService;
             _imagePath = $"{_webHostEnvironment.WebRootPath}/images";
         }
 
-        public async Task<string> AddMedicalRecordAsync(string id, MedicalRecordDto dto)
+        public async Task<MedicalRecordResponeDto?> AddMedicalRecordAsync(string id, MedicalRecordDto dto)
         {
-            if (dto.MRIImage is null || dto.MRIImage.Length == 0)
-                return"No file uploaded!";
+            if (dto.MRIImage is null || dto.MRIImage.Length == 0 || ! imageService.ValidateFileUpload(dto.MRIImage))
+                return null;
 
             byte[] fileBytes;
             using (var memoryStream = new MemoryStream())
@@ -29,94 +37,105 @@ namespace Brain_Tumor_Classification.Repositories.Services
                 fileBytes = memoryStream.ToArray();
             }
 
-            string aiResponse = "";
+            // Send to AI model and get prediction
+            var aiResponse = await SendToAiModelAsync(fileBytes, dto.MRIImage.FileName);
+            if (aiResponse is null) return null;
 
-            //ToDo: Save the response from the AI model to the database
-            aiResponse = await SendToAiModelAsync(fileBytes);
+            var imageInfo = await imageService.SaveImageAsync(dto.MRIImage);
 
-            var imageName = await SaveImageAsync(dto.MRIImage);
-
+            // 1. Create and save the MedicalRecord first
             var medicalRecord = new MedicalRecord
-            {
-                MRIImage = imageName,
+            {                
+                MRIImage = imageInfo.Key,
+                ImageURL = imageInfo.Value,
                 CreatedOn = DateTime.UtcNow,
                 PatientId = id,
-                //ToDo: Set the Tumor property based on the AI model response
             };
 
             _context.MedicalRecords.Add(medicalRecord);
             await _context.SaveChangesAsync();
 
-            //ToDo: Return the AI model response
-            return aiResponse;
+            // 2. Now create PredictionResult and link it to the saved MedicalRecord
+            var predictionResult = new PredictionResult
+            {
+                Status = aiResponse.Status,
+                PredictedClass = aiResponse.PredictedClass,
+                Confidence = aiResponse.Confidence,
+                MedicalRecordId = medicalRecord.Id 
+            };
+
+            _context.PredictionResults.Add(predictionResult);
+
+            // 3. Now create Tumor and link it to the saved MedicalRecord
+            var tumor = new Tumor
+            {
+                HasTumor = aiResponse.PredictedClass == "no_tumor" ? false : true,
+                TumorType = aiResponse.PredictedClass,
+                MedicalRecordId = medicalRecord.Id
+            };
+
+            _context.Tumors.Add(tumor);
+            await _context.SaveChangesAsync();
+
+            var response = new MedicalRecordResponeDto
+            {
+                MedicalRecordId = medicalRecord.Id,
+                ImageURL = medicalRecord.ImageURL,
+                PatientId = medicalRecord.PatientId,
+                HasTumor = tumor.HasTumor,
+                TumorType = tumor.TumorType,
+            };
+
+            return response;
         }
 
-        public async Task<byte[]?> GetMedicalRecordByIdAsync(int id)
+        public async Task<MedicalRecord?> GetMedicalRecordByIdAsync(int id)
         {
-            var medicalRecord = await _context.MedicalRecords.FindAsync(id);
+            var medicalRecord = await _context.MedicalRecords
+                .Include(m => m.Tumor)
+                .FirstOrDefaultAsync(m => m.Id == id);
 
-            if (medicalRecord is null)
-                return null;
-
-            var image = await File.ReadAllBytesAsync(Path.Combine(_imagePath, medicalRecord.MRIImage));
-
-            return image;
+            return medicalRecord;
         }
 
-        public async Task<List<byte[]>?> GetMedicalRecordsByPatientIdAsync(string patientId)
+        public async Task<List<MedicalRecord>?> GetMedicalRecordsByPatientIdAsync(string patientId)
         {
             var medicalRecords = _context.MedicalRecords
+                .Include(m => m.Tumor)
                 .Where(m => m.PatientId == patientId)
-                .Select(m => m.MRIImage)
                 .ToList();
 
-            if (medicalRecords.Count == 0)
-                return null;
-
-            var images = new List<byte[]>();
-
-            foreach (var record in medicalRecords)
-            {
-                images.Add(await File.ReadAllBytesAsync(Path.Combine(_imagePath, record)));
-            }
-
-            return images;
+            return medicalRecords;
         }
 
-        private async Task<string> SendToAiModelAsync(byte[] fileBytes)
+        private async Task<PredictionResultDto?> SendToAiModelAsync(byte[] fileBytes, string fileName)
         {
-            // 1. Create a stream content for the binary data
             using var fileContent = new ByteArrayContent(fileBytes);
 
-            // 2. Set the content type (e.g., for JPEG)
-            fileContent.Headers.ContentType = MediaTypeHeaderValue.Parse("image/jpg");
+            var extension = Path.GetExtension(fileName)?.ToLowerInvariant();
+            var contentType = extension switch
+            {
+                ".jpg" or ".jpeg" => "image/jpeg",
+                ".png" => "image/png",
+                _ => throw new NotSupportedException($"Unsupported file extension: {extension}")
+            };
 
-            // 3. Prepare multipart form data
+            fileContent.Headers.ContentType = MediaTypeHeaderValue.Parse(contentType);
+
             using var formData = new MultipartFormDataContent();
-            formData.Add(fileContent, "file", "mri_image.jpg");
+            formData.Add(fileContent, "file", fileName);
 
-            // 4. Send with PostAsync (not PostAsJsonAsync!)
-            var response = await _httpClient.PostAsync(
-                "https://a06a-104-196-146-144.ngrok-free.app/predict",
+            using var response = await _httpClient.PostAsync(
+                "https://ae95-34-125-27-114.ngrok-free.app/predict",
                 formData
             );
 
-            response.EnsureSuccessStatusCode();
+            if (!response.IsSuccessStatusCode) return null;
+            
+            var responseContent = await response.Content.ReadAsStringAsync();
+            var result = JsonSerializer.Deserialize<PredictionResultDto>(responseContent);
 
-            return await response.Content.ReadAsStringAsync();
-        }
-
-        private async Task<string> SaveImageAsync(IFormFile image)
-        {
-            var imageName = $"{Guid.NewGuid()}{Path.GetExtension(image.FileName)}";
-
-            var imagePath = Path.Combine(_imagePath, imageName);
-
-            using var stream = File.Create(imagePath);
-            await image.CopyToAsync(stream);
-            stream.Dispose();
-
-            return imageName;
+            return result;
         }
     }
 }

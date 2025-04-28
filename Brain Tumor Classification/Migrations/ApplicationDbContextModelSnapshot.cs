@@ -111,6 +111,10 @@ namespace Brain_Tumor_Classification.Migrations
                     b.Property<DateTime>("CreatedOn")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("ImageURL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("MRIImage")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -124,6 +128,35 @@ namespace Brain_Tumor_Classification.Migrations
                     b.HasIndex("PatientId");
 
                     b.ToTable("MedicalRecords");
+                });
+
+            modelBuilder.Entity("Brain_Tumor_Classification.Models.PredictionResult", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<float>("Confidence")
+                        .HasColumnType("real");
+
+                    b.Property<int>("MedicalRecordId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PredictedClass")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MedicalRecordId");
+
+                    b.ToTable("PredictionResults");
                 });
 
             modelBuilder.Entity("Brain_Tumor_Classification.Models.Tumor", b =>
@@ -182,13 +215,13 @@ namespace Brain_Tumor_Classification.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "ca81f9a9-1f35-4c17-b08b-7f06318a87e6",
+                            Id = "47501e10-64a3-4f61-970b-cb6a5c8ea530",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "6e7aa1d4-bd0d-41a9-a55f-ab2006fc30a8",
+                            Id = "0739d7bb-fd6d-4896-84df-d26bc1bb96a7",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -346,6 +379,17 @@ namespace Brain_Tumor_Classification.Migrations
                         .IsRequired();
 
                     b.Navigation("Patient");
+                });
+
+            modelBuilder.Entity("Brain_Tumor_Classification.Models.PredictionResult", b =>
+                {
+                    b.HasOne("Brain_Tumor_Classification.Models.MedicalRecord", "MedicalRecord")
+                        .WithMany()
+                        .HasForeignKey("MedicalRecordId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MedicalRecord");
                 });
 
             modelBuilder.Entity("Brain_Tumor_Classification.Models.Tumor", b =>

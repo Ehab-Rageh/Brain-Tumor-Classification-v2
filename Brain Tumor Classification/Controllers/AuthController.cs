@@ -22,7 +22,7 @@ public class AuthController : ControllerBase
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
-
+        
         var result = await _authService.RegisterAsync(dto);
 
         if (!result.IsNullOrEmpty())
@@ -57,32 +57,6 @@ public class AuthController : ControllerBase
         });
     }
 
-    [HttpGet("Me")]
-    [Authorize]
-    public async Task<IActionResult> GetCurrentUser()
-    {
-        var userId = User.FindFirst("uid")?.Value;
-        
-        if (userId == null)
-            return Unauthorized();
-
-        var user = await userManager.FindByIdAsync(userId);
-        if (user == null)
-            return NotFound("User not found");
-
-        var roles = await userManager.GetRolesAsync(user);
-
-        var result = new GetCurrentUserResponseDto
-        {
-            Name = user.Name,
-            Email = user.Email,
-            Gender = user.Gender,
-            BirthDate = user.BirthDate,
-        };
-
-        return Ok(result);
-    }
-
     [HttpPost("confirmEmail")]
     public async Task<IActionResult> ConfirmEmailAsync([FromBody] ConfirmEmailRequestDto confirmEmailRequestDto)
     {
@@ -97,6 +71,20 @@ public class AuthController : ControllerBase
         return BadRequest(await _authService.ConfirmEmailAsync(confirmEmailRequestDto));
     }
 
+    [HttpPost("resend-confirmation")]
+    public async Task<IActionResult> ResendConfirmationEmailAsync([FromBody] ResendConfirmationDto dto)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var result = await _authService.ResendConfirmationEmailAsync(dto);
+
+        if (!result.IsNullOrEmpty())
+            return BadRequest(result);
+
+        return Ok("a new confirmation email has been sent.");
+    }
+
     [Route("forgetPassword")]
     [HttpPost]
     public async Task<IActionResult> ForgetPasswordAsync(ForgetPasswordDto request)
@@ -104,8 +92,10 @@ public class AuthController : ControllerBase
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        if (await _authService.ForgetPasswordAsync(request) is not null)
-            return BadRequest(await _authService.ForgetPasswordAsync(request));
+        var  res = await _authService.ForgetPasswordAsync(request);
+
+        if (res == "User not found") 
+            return BadRequest("Something Went Wrong. Please Try again later");
 
         return Ok(new { message = "Reset password code has been sent to your email" });
     }
@@ -116,10 +106,12 @@ public class AuthController : ControllerBase
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        if (await _authService.ResetPasswordAsync(model) is not null)
-            return BadRequest(await _authService.ResetPasswordAsync(model));
+        var res = await _authService.ResetPasswordAsync(model);
 
-        return Ok("Password has been reset successfully.");
+        if (res.IsNullOrEmpty())
+            return Ok("password changed successfully");
+
+        return BadRequest(await _authService.ResetPasswordAsync(model));
     }
 
     [HttpPost("addRole")]
@@ -158,7 +150,7 @@ public class AuthController : ControllerBase
 
         if (token is null)
             return BadRequest("Token is required!");
-
+            
         var result = await _authService.RevokeTokenAsync(token);
 
         if (!result)

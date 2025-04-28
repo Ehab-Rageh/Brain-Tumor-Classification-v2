@@ -2,7 +2,6 @@
 
 public class MedicalRecordDto
 {
-    [AllowedExtentions(FileSettings.AllowedExtentions),
-        MaxSize(FileSettings.MaxFileSizeInBytes)]
+    [MaxSize(FileSettings.MaxFileSizeInBytes)]
     public IFormFile MRIImage { get; set; } = default!;
 }

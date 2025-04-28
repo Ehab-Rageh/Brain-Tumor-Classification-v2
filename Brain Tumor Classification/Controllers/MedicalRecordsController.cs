@@ -20,12 +20,12 @@
             if (userId == null)
                 return Unauthorized();
 
-            var response = await _medicalRecordService.AddMedicalRecordAsync(userId, dto);
+            var result = await _medicalRecordService.AddMedicalRecordAsync(userId, dto);
 
-            if (!string.IsNullOrEmpty(response))
-                return BadRequest(response);
+            if (result is null)
+                return BadRequest("Something wrong happend. try again later.");
 
-            return Ok(response);
+            return Ok(result);
         }
 
         [HttpGet("getById/{id}")]
@@ -36,7 +36,16 @@
             if (medicalRecord is null)
                 return NotFound("Medical Record not found!");
 
-            return Ok(medicalRecord);
+            var response = new MedicalRecordResponeDto
+            {
+                MedicalRecordId = medicalRecord.Id,
+                ImageURL = medicalRecord.ImageURL,
+                PatientId = medicalRecord.PatientId,
+                HasTumor = medicalRecord.Tumor.HasTumor,
+                TumorType = medicalRecord.Tumor.TumorType
+            };
+
+            return Ok(response);
         }
 
         [HttpGet("GetCurrentUserMedicalRecords")]
@@ -52,7 +61,20 @@
             if (medicalRecord is null)
                 return NotFound("There is no Medical Records!");
 
-            return Ok(medicalRecord);
+            var response = new List<MedicalRecordResponeDto>();
+            foreach (var record in medicalRecord)
+            {
+                response.Add(new MedicalRecordResponeDto
+                {
+                    MedicalRecordId = record.Id,
+                    ImageURL = record.ImageURL,
+                    PatientId = record.PatientId,
+                    HasTumor = record.Tumor.HasTumor,
+                    TumorType = record.Tumor.TumorType
+                });
+            }
+
+            return Ok(response);
         }
     }
 }

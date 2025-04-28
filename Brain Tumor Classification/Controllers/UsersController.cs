@@ -16,22 +16,23 @@ namespace Brain_Tumor_Classification.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAll()
-        {
-            var users = await _userService.GetAllAsync();
+        //[HttpGet]
+        //public async Task<IActionResult> GetAll()
+        //{
+        //    var users = await _userService.GetAllAsync();
 
-            return Ok(users);
-        }
+        //    return Ok(users);
+        //}
 
         [Authorize]
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById([FromRoute] string id)
+        [HttpGet]
+        public async Task<IActionResult> Get()
         {
-            var user = await _userService.GetByIdAsync(id);
+            var userId = User.FindFirst("uid")?.Value;
 
-            if (user is null)
-                return NotFound($"There is no user with Id: {id}");
+            if (userId is null) return Unauthorized();
+
+            var user = await _userService.GetByIdAsync(userId);
 
             return Ok(_mapper.Map<UserDetailsDto>(user));
         }
@@ -40,6 +41,9 @@ namespace Brain_Tumor_Classification.Controllers
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] UpdateUserDto dto)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var userId = User.FindFirst("uid")?.Value;
 
             if(userId is null) return Unauthorized();
@@ -50,7 +54,6 @@ namespace Brain_Tumor_Classification.Controllers
 
             user.Name = dto.Name;
             user.BirthDate = dto.BirthDate;
-            user.UserName = dto.UserName;
             user.Gender = dto.Gender;
 
             await _userService.UpdateAsync(user);
@@ -59,23 +62,28 @@ namespace Brain_Tumor_Classification.Controllers
         }
 
         [Authorize]
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete([FromRoute] string id)
+        [HttpDelete]
+        public async Task<IActionResult> Delete()
         {
-            var user = await _userService.GetByIdAsync(id);
+            var userId = User.FindFirst("uid")?.Value;
+
+            if (userId is null) return Unauthorized();
+
+            var user = await _userService.GetByIdAsync(userId);
+
             if (user is null)
-                return NotFound($"There is no user with Id: {id}");
+                return NotFound($"There is no user with Id: {userId}");
 
             await _userService.Delete(user);
 
-            return Ok(_mapper.Map<RegisterDto>(user));
+            return Ok(_mapper.Map<UserDetailsDto>(user));
         }
 
-        [HttpDelete("delete-all")]
-        public async Task<IActionResult> DeleteAllUsers()
-        {
-            await _userService.DeleteAll();
-            return Ok(new { message = "All users deleted successfully" });
-        }
+        //[HttpDelete("delete-all")]
+        //public async Task<IActionResult> DeleteAllUsers()
+        //{
+        //    await _userService.DeleteAll();
+        //    return Ok(new { message = "All users deleted successfully" });
+        //}
     }
 }

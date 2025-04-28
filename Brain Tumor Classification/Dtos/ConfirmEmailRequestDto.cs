@@ -2,7 +2,9 @@
 {
     public class ConfirmEmailRequestDto
     {
-        public string UserId { get; set; }
+        [Required]
+        public string UserEmail { get; set; }
+        [Required]
         public string Code { get; set; }
     }
 }

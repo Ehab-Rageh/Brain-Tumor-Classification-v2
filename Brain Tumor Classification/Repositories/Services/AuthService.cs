@@ -29,7 +29,6 @@ public class AuthService : IAuthService
             Name = dto.Name,
             Gender = dto.Gender,
             BirthDate = dto.BirthDate,
-         
         };
 
         var result = await _userManager.CreateAsync(user, dto.Password);
@@ -69,12 +68,12 @@ public class AuthService : IAuthService
         var user = await _userManager.FindByEmailAsync(dto.Email);
 
         //Todo
-        //if (user.EmailConfirmed)
-        //{
-        //    authDto.IsConfirmed = true;
-        //}
+        if (user.EmailConfirmed)
+        {
+            authDto.IsConfirmed = true;
+        }
 
-        authDto.IsConfirmed = true;
+        //authDto.IsConfirmed = true;
 
         if (user is null || !await _userManager.CheckPasswordAsync(user, dto.Password))
             return new AuthDto { Message = "Email or password is incorrect!" };
@@ -108,14 +107,14 @@ public class AuthService : IAuthService
 
     public async Task<string> ConfirmEmailAsync(ConfirmEmailRequestDto dto)
     {
-        var user = await _userManager.FindByIdAsync(dto.UserId);
+        var user = await _userManager.FindByEmailAsync(dto.UserEmail);
 
         if (user == null)
             return "User not found.";
 
         var result = await _userManager.ConfirmEmailAsync(user, dto.Code);
 
-        if (!result.Succeeded)
+        if (result.Succeeded)
             return "T";
 
         return "Invalid or expired confirmation code.";
@@ -287,6 +286,29 @@ public class AuthService : IAuthService
             ExpiresOn = DateTime.UtcNow.AddDays(3),
             CreatedOn = DateTime.UtcNow
         };
+    }
+
+    public async Task<string> ResendConfirmationEmailAsync(ResendConfirmationDto dto)
+    {
+        var user = await _userManager.FindByEmailAsync(dto.Email);
+
+        if (user == null)
+        {
+            return "User Not Found"; 
+        }
+
+        if (await _userManager.IsEmailConfirmedAsync(user))
+        {
+            return "The email is already confirmed";
+        }
+
+        // Generate a NEW confirmation token
+        var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
+        await _emailSender.SendEmailAsync(user.Email, "Resend Email Confirmation",
+            $"Please confirm your account by using this code: {code}\n");   
+
+        return string.Empty; // Indicate success
     }
 
 }

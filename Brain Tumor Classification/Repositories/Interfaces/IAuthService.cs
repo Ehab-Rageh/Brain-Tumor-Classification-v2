@@ -10,5 +10,6 @@ public interface IAuthService
     Task<string> AddRoleAsync(AddRoleDto dto);
     Task<AuthDto> RefreshTokenAsync(string token);
     Task<bool> RevokeTokenAsync(string token);
+    Task<string> ResendConfirmationEmailAsync(ResendConfirmationDto dto);
 
 }
