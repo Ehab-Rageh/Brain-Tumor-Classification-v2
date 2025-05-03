@@ -47,9 +47,6 @@ public class AuthController : ControllerBase
         if (!result.IsConfirmed)
             return BadRequest("Please confirm your email first");
 
-        if (!string.IsNullOrEmpty(result.RefreshToken))
-            SetRefreshTokenInCookie(result.RefreshToken, result.RefreshTokenExpiration);
-
         return Ok(new
         {
             Token = result.Token,
@@ -129,24 +126,29 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("refreshToken")]
-    public async Task<IActionResult> RefreshTokenAsync()
+    public async Task<IActionResult> RefreshTokenAsync([FromBody] TokenDto dto)
     {
-        var refreshToken = Request.Cookies["refreshToken"];
+        var token = dto.Token;
 
-        var result = await _authService.RefreshTokenAsync(refreshToken);
+        if (token == null)
+            return BadRequest("refreshToken is null");
+
+        var result = await _authService.RefreshTokenAsync(token);
 
         if (!result.IsAuthenticated)
             return BadRequest(result.Message);
 
-        SetRefreshTokenInCookie(result.RefreshToken, result.RefreshTokenExpiration);
-
-        return Ok(result);
+        return Ok(new
+        {
+            Token = result.Token,
+            RefreshToken = result.RefreshToken
+        });
     }
 
     [HttpPost("revokeToken")]
-    public async Task<IActionResult> RevokeTokenAsync([FromBody] RevokeTokenDto dto)
+    public async Task<IActionResult> RevokeTokenAsync([FromBody] TokenDto dto)
     {
-        var token = dto.Token ?? Request.Cookies["refreshToken"];
+        var token = dto.Token;
 
         if (token is null)
             return BadRequest("Token is required!");
@@ -159,16 +161,18 @@ public class AuthController : ControllerBase
         return Ok("Token has been revoked successfully!");
     }
 
-    private void SetRefreshTokenInCookie(string refreshToken, DateTime Expires)
-    {
-        var cookieOptions = new CookieOptions
-        {
-            HttpOnly = true,
-            Expires = Expires.ToLocalTime(),
-            Secure = true,
-            IsEssential = true,
-            SameSite = SameSiteMode.None,
-        };
-        Response.Cookies.Append("refreshToken", refreshToken, cookieOptions);
-    }
+    //private void SetRefreshTokenInCookie(string refreshToken, DateTime Expires)
+    //{
+    //    var cookieOptions = new CookieOptions
+    //    {
+    //        HttpOnly = true,
+    //        Expires = Expires.ToLocalTime(),
+    //        Secure = true,
+    //        IsEssential = true,
+    //        SameSite = SameSiteMode.None,
+    //        Domain = "brain-tumor-classification.runasp.net",
+            
+    //    };
+    //    Response.Cookies.Append("refreshToken", refreshToken, cookieOptions);
+    //}
 }

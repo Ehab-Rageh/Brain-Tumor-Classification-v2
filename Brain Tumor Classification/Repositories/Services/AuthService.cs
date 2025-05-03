@@ -67,13 +67,10 @@ public class AuthService : IAuthService
 
         var user = await _userManager.FindByEmailAsync(dto.Email);
 
-        //Todo
         if (user.EmailConfirmed)
         {
             authDto.IsConfirmed = true;
         }
-
-        //authDto.IsConfirmed = true;
 
         if (user is null || !await _userManager.CheckPasswordAsync(user, dto.Password))
             return new AuthDto { Message = "Email or password is incorrect!" };
@@ -223,7 +220,7 @@ public class AuthService : IAuthService
 
         if(user is null)
         {
-            authDto.Message = "Invalid token!";
+            authDto.Message = "User is Null!";
             return authDto;
         }
 
@@ -231,7 +228,7 @@ public class AuthService : IAuthService
 
         if (!refreshToken.IsActive)
         {
-            authDto.Message = "Invalid token!";
+            authDto.Message = "token not active!";
             return authDto;
         }
 
@@ -243,6 +240,7 @@ public class AuthService : IAuthService
 
         var jwtSecurityToken = await CreateJwtTokenAsync(user);
         var roles = await _userManager.GetRolesAsync(user);
+        authDto.RefreshToken = newRefreshToken.Token;
         authDto.IsAuthenticated = true;
         authDto.Email = user.Email;
         authDto.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);

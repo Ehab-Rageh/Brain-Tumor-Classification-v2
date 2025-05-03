@@ -227,6 +227,25 @@
         "tags": [
           "Auth"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenDto"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -243,17 +262,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RevokeTokenDto"
+                "$ref": "#/components/schemas/TokenDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RevokeTokenDto"
+                "$ref": "#/components/schemas/TokenDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RevokeTokenDto"
+                "$ref": "#/components/schemas/TokenDto"
               }
             }
           }
@@ -531,7 +550,7 @@
         },
         "additionalProperties": false
       },
-      "RevokeTokenDto": {
+      "TokenDto": {
         "type": "object",
         "properties": {
           "token": {

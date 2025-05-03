@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Brain_Tumor_Classification.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250428000650_initial migration")]
-    partial class initialmigration
+    [Migration("20250502154646_intialCreate")]
+    partial class intialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -218,13 +218,13 @@ namespace Brain_Tumor_Classification.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "47501e10-64a3-4f61-970b-cb6a5c8ea530",
+                            Id = "9daa346d-3440-4c62-ae2d-8e13cd27f728",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "0739d7bb-fd6d-4896-84df-d26bc1bb96a7",
+                            Id = "a6ce888b-8e31-481e-b087-61361064a96c",
                             Name = "User",
                             NormalizedName = "USER"
                         });

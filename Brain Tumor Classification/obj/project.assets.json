@@ -11276,23 +11276,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hossa\\.nuget\\packages\\": {},
+    "C:\\Users\\ehabr\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hossa\\OneDrive\\Desktop\\sasdsa\\Brain Tumor Classification\\Brain Tumor Classification.csproj",
+      "projectUniqueName": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-v2\\Brain Tumor Classification\\Brain Tumor Classification.csproj",
       "projectName": "Brain Tumor Classification",
-      "projectPath": "C:\\Users\\hossa\\OneDrive\\Desktop\\sasdsa\\Brain Tumor Classification\\Brain Tumor Classification.csproj",
-      "packagesPath": "C:\\Users\\hossa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hossa\\OneDrive\\Desktop\\sasdsa\\Brain Tumor Classification\\obj\\",
+      "projectPath": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-v2\\Brain Tumor Classification\\Brain Tumor Classification.csproj",
+      "packagesPath": "C:\\Users\\ehabr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ehabr\\OneDrive\\Desktop\\Brain-Tumor-Classification-main\\Brain-Tumor-Classification-v2\\Brain Tumor Classification\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\hossa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ehabr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11301,6 +11301,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11401,7 +11402,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -11,8 +11,6 @@ public class AuthDto
     public string Token { get; set; }
     public bool IsConfirmed { get; set; } = false;
     //public DateTime ExpiresOn { get; set; }
-
-    [JsonIgnore]
     public string? RefreshToken { get; set; }
     public DateTime RefreshTokenExpiration { get; set; }
 }

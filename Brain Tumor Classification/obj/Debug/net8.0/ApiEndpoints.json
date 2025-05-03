@@ -70,7 +70,13 @@
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Brain_Tumor_Classification.Dtos.TokenDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -131,7 +137,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Brain_Tumor_Classification.Dtos.RevokeTokenDto",
+        "Type": "Brain_Tumor_Classification.Dtos.TokenDto",
         "IsRequired": true
       }
     ],

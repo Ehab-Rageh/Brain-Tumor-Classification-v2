@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Brain_Tumor_Classification.Migrations
 {
     /// <inheritdoc />
-    public partial class initialmigration : Migration
+    public partial class intialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -254,8 +254,8 @@ namespace Brain_Tumor_Classification.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "0739d7bb-fd6d-4896-84df-d26bc1bb96a7", null, "User", "USER" },
-                    { "47501e10-64a3-4f61-970b-cb6a5c8ea530", null, "Admin", "ADMIN" }
+                    { "9daa346d-3440-4c62-ae2d-8e13cd27f728", null, "Admin", "ADMIN" },
+                    { "a6ce888b-8e31-481e-b087-61361064a96c", null, "User", "USER" }
                 });
 
             migrationBuilder.CreateIndex(

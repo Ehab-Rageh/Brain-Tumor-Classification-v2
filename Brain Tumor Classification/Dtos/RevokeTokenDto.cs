@@ -1,6 +1,6 @@
 ﻿namespace Brain_Tumor_Classification.Dtos
 {
-    public class RevokeTokenDto
+    public class TokenDto
     {
         public string? Token { get; set; }
     }
