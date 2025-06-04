@@ -4,181 +4,181 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1d306d41-82db-411a-8857-e585c0762869.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gc0pmdjufa"},{"Name":"integrity","Value":"sha256-AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/1d306d41-82db-411a-8857-e585c0762869.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/1d306d41-82db-411a-8857-e585c0762869.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1d306d41-82db-411a-8857-e585c0762869.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/26bb626a-5c6f-4a2b-a6e4-65b222e7d97a.94d6cb0gdx.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\26bb626a-5c6f-4a2b-a6e4-65b222e7d97a.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"94d6cb0gdx"},{"Name":"integrity","Value":"sha256-6R/CdVv\u002BTysdDh1bXbWlvNJRmaEf8kVL0xOGVm91qVo="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/26bb626a-5c6f-4a2b-a6e4-65b222e7d97a.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29974"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226R/CdVv\u002BTysdDh1bXbWlvNJRmaEf8kVL0xOGVm91qVo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29974"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226R/CdVv\u002BTysdDh1bXbWlvNJRmaEf8kVL0xOGVm91qVo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/26bb626a-5c6f-4a2b-a6e4-65b222e7d97a.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\26bb626a-5c6f-4a2b-a6e4-65b222e7d97a.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6R/CdVv\u002BTysdDh1bXbWlvNJRmaEf8kVL0xOGVm91qVo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"29974"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226R/CdVv\u002BTysdDh1bXbWlvNJRmaEf8kVL0xOGVm91qVo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"29974"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226R/CdVv\u002BTysdDh1bXbWlvNJRmaEf8kVL0xOGVm91qVo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/3e8c5151-9054-43d2-ae8d-6d4aa406dbc2.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3e8c5151-9054-43d2-ae8d-6d4aa406dbc2.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-30bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"26104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002230bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"26104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002230bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/3e8c5151-9054-43d2-ae8d-6d4aa406dbc2.x0c1ey7jla.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\3e8c5151-9054-43d2-ae8d-6d4aa406dbc2.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x0c1ey7jla"},{"Name":"integrity","Value":"sha256-30bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/3e8c5151-9054-43d2-ae8d-6d4aa406dbc2.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"26104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002230bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"26104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002230bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/54e33ece-9b69-48b7-a97c-fdddc12ebc95.94d6cb0gdx.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\54e33ece-9b69-48b7-a97c-fdddc12ebc95.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"94d6cb0gdx"},{"Name":"integrity","Value":"sha256-6R/CdVv\u002BTysdDh1bXbWlvNJRmaEf8kVL0xOGVm91qVo="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/54e33ece-9b69-48b7-a97c-fdddc12ebc95.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29974"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226R/CdVv\u002BTysdDh1bXbWlvNJRmaEf8kVL0xOGVm91qVo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29974"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226R/CdVv\u002BTysdDh1bXbWlvNJRmaEf8kVL0xOGVm91qVo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/54e33ece-9b69-48b7-a97c-fdddc12ebc95.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\54e33ece-9b69-48b7-a97c-fdddc12ebc95.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6R/CdVv\u002BTysdDh1bXbWlvNJRmaEf8kVL0xOGVm91qVo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"29974"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226R/CdVv\u002BTysdDh1bXbWlvNJRmaEf8kVL0xOGVm91qVo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"29974"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226R/CdVv\u002BTysdDh1bXbWlvNJRmaEf8kVL0xOGVm91qVo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/76f129b5-6d9d-4399-9556-125137589998.ho2kk4t24k.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\76f129b5-6d9d-4399-9556-125137589998.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ho2kk4t24k"},{"Name":"integrity","Value":"sha256-b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/76f129b5-6d9d-4399-9556-125137589998.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28301"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28301"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/76f129b5-6d9d-4399-9556-125137589998.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\76f129b5-6d9d-4399-9556-125137589998.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"28301"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"28301"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/86485459-1691-4a36-9159-f1f898bb69cd.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\86485459-1691-4a36-9159-f1f898bb69cd.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-30bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"26104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002230bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"26104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002230bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/86485459-1691-4a36-9159-f1f898bb69cd.x0c1ey7jla.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\86485459-1691-4a36-9159-f1f898bb69cd.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x0c1ey7jla"},{"Name":"integrity","Value":"sha256-30bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/86485459-1691-4a36-9159-f1f898bb69cd.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"26104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002230bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"26104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002230bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/91fdf77d-f714-4e65-b3ba-4a76774db800.cfzthtoabq.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\91fdf77d-f714-4e65-b3ba-4a76774db800.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cfzthtoabq"},{"Name":"integrity","Value":"sha256-mJ3ouLO6g0luWugrJZqI3tBqnD629mEiLsU4Nc\u002BMGt8="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/91fdf77d-f714-4e65-b3ba-4a76774db800.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"24866"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mJ3ouLO6g0luWugrJZqI3tBqnD629mEiLsU4Nc\u002BMGt8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"24866"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mJ3ouLO6g0luWugrJZqI3tBqnD629mEiLsU4Nc\u002BMGt8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/91fdf77d-f714-4e65-b3ba-4a76774db800.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\91fdf77d-f714-4e65-b3ba-4a76774db800.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mJ3ouLO6g0luWugrJZqI3tBqnD629mEiLsU4Nc\u002BMGt8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"24866"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mJ3ouLO6g0luWugrJZqI3tBqnD629mEiLsU4Nc\u002BMGt8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"24866"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mJ3ouLO6g0luWugrJZqI3tBqnD629mEiLsU4Nc\u002BMGt8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/945a070f-d3a7-4890-8934-a0c975fd2265.ho2kk4t24k.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\945a070f-d3a7-4890-8934-a0c975fd2265.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ho2kk4t24k"},{"Name":"integrity","Value":"sha256-b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/945a070f-d3a7-4890-8934-a0c975fd2265.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28301"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28301"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/945a070f-d3a7-4890-8934-a0c975fd2265.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\945a070f-d3a7-4890-8934-a0c975fd2265.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"28301"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"28301"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/9d69814c-10ff-48a7-8ffe-0e1c340729e2.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9d69814c-10ff-48a7-8ffe-0e1c340729e2.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-30bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"26104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002230bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"26104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002230bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/9d69814c-10ff-48a7-8ffe-0e1c340729e2.x0c1ey7jla.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\9d69814c-10ff-48a7-8ffe-0e1c340729e2.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x0c1ey7jla"},{"Name":"integrity","Value":"sha256-30bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/9d69814c-10ff-48a7-8ffe-0e1c340729e2.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"26104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002230bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"26104"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u002230bJaJBHTy7F8Iqiwy5rwca1aF\u002BLkTUB\u002BVSlFabeAvo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/acec91ca-a9d9-42c1-8648-8710edd3a782.ho2kk4t24k.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\acec91ca-a9d9-42c1-8648-8710edd3a782.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ho2kk4t24k"},{"Name":"integrity","Value":"sha256-b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/acec91ca-a9d9-42c1-8648-8710edd3a782.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28301"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28301"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/acec91ca-a9d9-42c1-8648-8710edd3a782.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\acec91ca-a9d9-42c1-8648-8710edd3a782.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"28301"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"28301"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022b0GxWIoy8z7HK106J30qhKO7x7AwtQ3VSzcz91ZT6SY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/ada27f89-ca50-44ba-ada6-45cb55397f3c.gc0pmdjufa.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ada27f89-ca50-44ba-ada6-45cb55397f3c.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gc0pmdjufa"},{"Name":"integrity","Value":"sha256-AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/ada27f89-ca50-44ba-ada6-45cb55397f3c.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/ada27f89-ca50-44ba-ada6-45cb55397f3c.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ada27f89-ca50-44ba-ada6-45cb55397f3c.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/adcb9dd3-b580-4a36-a196-ce4a7e38dc5b.gc0pmdjufa.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\adcb9dd3-b580-4a36-a196-ce4a7e38dc5b.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gc0pmdjufa"},{"Name":"integrity","Value":"sha256-AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/adcb9dd3-b580-4a36-a196-ce4a7e38dc5b.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/adcb9dd3-b580-4a36-a196-ce4a7e38dc5b.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\adcb9dd3-b580-4a36-a196-ce4a7e38dc5b.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/b9149db4-774e-4fa3-ad14-ce799a76b511.gc0pmdjufa.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b9149db4-774e-4fa3-ad14-ce799a76b511.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gc0pmdjufa"},{"Name":"integrity","Value":"sha256-AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/b9149db4-774e-4fa3-ad14-ce799a76b511.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/b9149db4-774e-4fa3-ad14-ce799a76b511.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\b9149db4-774e-4fa3-ad14-ce799a76b511.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/d7fc760d-c6b9-45f4-9303-09a549a645f2.gc0pmdjufa.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d7fc760d-c6b9-45f4-9303-09a549a645f2.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gc0pmdjufa"},{"Name":"integrity","Value":"sha256-AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/d7fc760d-c6b9-45f4-9303-09a549a645f2.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/d7fc760d-c6b9-45f4-9303-09a549a645f2.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\d7fc760d-c6b9-45f4-9303-09a549a645f2.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54666"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022AKhw57Wt1E1lmrlR1xAgojsw6tQz12sJrPq4gPatrBQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/ef6e9f07-f49c-45ad-b74f-c7387af1065c.cfzthtoabq.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ef6e9f07-f49c-45ad-b74f-c7387af1065c.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cfzthtoabq"},{"Name":"integrity","Value":"sha256-mJ3ouLO6g0luWugrJZqI3tBqnD629mEiLsU4Nc\u002BMGt8="},{"Name":"label","Value":"_content/Brain Tumor Classification/images/ef6e9f07-f49c-45ad-b74f-c7387af1065c.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"24866"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mJ3ouLO6g0luWugrJZqI3tBqnD629mEiLsU4Nc\u002BMGt8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"24866"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mJ3ouLO6g0luWugrJZqI3tBqnD629mEiLsU4Nc\u002BMGt8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Brain Tumor Classification/images/ef6e9f07-f49c-45ad-b74f-c7387af1065c.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ef6e9f07-f49c-45ad-b74f-c7387af1065c.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mJ3ouLO6g0luWugrJZqI3tBqnD629mEiLsU4Nc\u002BMGt8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"24866"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mJ3ouLO6g0luWugrJZqI3tBqnD629mEiLsU4Nc\u002BMGt8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:40:50 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"24866"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mJ3ouLO6g0luWugrJZqI3tBqnD629mEiLsU4Nc\u002BMGt8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 17:37:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

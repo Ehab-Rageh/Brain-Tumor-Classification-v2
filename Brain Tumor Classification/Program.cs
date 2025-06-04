@@ -5,6 +5,30 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("OpenCorsPolicy", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+    options.AddPolicy("AllowFrontend",
+       policy =>
+       {
+           policy.WithOrigins("http://braintumordetectiontest.runasp.net", "http://localhost:5173")
+                 .AllowAnyHeader()
+                 .AllowAnyMethod();
+       });
+    options.AddPolicy("AllowFrontendServer",
+       policy =>
+       {
+           policy.WithOrigins("https://brain-ai-fm2l.vercel.app")
+                 .AllowAnyHeader()
+                 .AllowAnyMethod();
+       });
+});
+
 // Add services to the container.
 
 builder.Services.AddTransient<IEmailSender, EmailSender>();
@@ -16,7 +40,7 @@ builder.Services.AddTransient<IMedicalRecordService, MedicalRecordService>();
 builder.Services.Configure<JWT>(builder.Configuration.GetSection("Jwt"));
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("LocalConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ServerConnection")));
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 {
@@ -104,6 +128,11 @@ builder.Services.AddAuthentication( options =>
 );
 
 var app = builder.Build();
+
+app.UseCors("OpenCorsPolicy");
+app.UseCors("AllowFrontend");
+app.UseCors("AllowFrontendServer");
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

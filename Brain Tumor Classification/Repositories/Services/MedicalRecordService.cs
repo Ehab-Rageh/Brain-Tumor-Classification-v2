@@ -126,7 +126,7 @@ namespace Brain_Tumor_Classification.Repositories.Services
             formData.Add(fileContent, "file", fileName);
 
             using var response = await _httpClient.PostAsync(
-                "https://ae95-34-125-27-114.ngrok-free.app/predict",
+                "https://51fc-35-202-197-253.ngrok-free.app/predict",
                 formData
             );
 
